@@ -1,112 +1,37 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CyberLearn DZ</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CyberDZ - الصفحة الرئيسية</title>
+  <!-- رابط أيقونات Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
   <style>
     body {
       margin: 0;
       font-family: 'Courier New', monospace;
-      background-color: #0f0f0f;
-      color: #00ff88;
-    }
-
-    header, footer {
+      background: linear-gradient(#000000, #111111);
+      color: #00ff00;
       text-align: center;
-      padding: 1em;
-      background-color: #111;
-      border-bottom: 1px solid #00ff88;
+      padding: 50px 20px;
     }
 
-    nav {
-      display: flex;
-      justify-content: center;
-      gap: 2em;
-      margin: 1em 0;
+    h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
     }
 
-    nav a {
-      color: #00ff88;
-      text-decoration: none;
-      border-bottom: 1px solid transparent;
+    p {
+      font-size: 1.2em;
+      margin-bottom: 40px;
     }
 
-    nav a:hover {
-      border-bottom: 1px solid #00ff88;
-    }
-
-    section {
-      padding: 2em;
-    }
-
-    h2 {
-      color: #00ffaa;
-      cursor: pointer;
-    }
-
-    .content {
-      display: none;
-      margin-top: 10px;
-      padding: 1em;
-      border: 1px dashed #00ffaa;
-      background-color: #111;
-    }
-  </style>
-</head>
-<body>
-
-  <header>
-    <h1>CyberLearn DZ</h1>
-    <p>تعلم الأمن السيبراني بأسلوب الهاكر الأخلاقي</p>
-  </header>
-
-  <nav>
-    <a href="#basic">المفاهيم الأساسية</a>
-    <a href="#tools">أدوات مشهورة</a>
-    <a href="#links">روابط تدريب</a>
-  </nav>
-
-  <section id="basic">
-    <h2 onclick="toggle('cyber')">ما هو الأمن السيبراني؟</h2>
-    <div class="content" id="cyber">
-      الأمن السيبراني هو حماية الأنظمة والشبكات من الهجمات الرقمية التي تهدف إلى الوصول إلى معلومات حساسة أو تعطيل العمليات.
-    </div>
-
-    <h2 onclick="toggle('hacking')">ما هو الهكر الأخلاقي؟</h2>
-    <div class="content" id="hacking">
-      الهكر الأخلاقي يستخدم مهارات الاختراق لاختبار الأنظمة واكتشاف الثغرات قبل أن يستغلها المخترقون الخبيثون.
-    </div>
-  </section>
-
-  <section id="tools">
-    <h2>أدوات مشهورة</h2>
-    <ul>
-      <li>Wireshark - تحليل الشبكات</li>
-      <li>Metasploit - اختبار الاختراق</li>
-      <li>nmap - فحص الشبكات</li>
-    </ul>
-  </section>
-
-  <section id="links">
-    <h2>روابط خارجية لتدريب عملي</h2>
-    <ul>
-      <li><a href="https://tryhackme.com" target="_blank">TryHackMe</a></li>
-      <li><a href="https://hackthebox.com" target="_blank">Hack The Box</a></li>
-      <li><a href="https://overthewire.org" target="_blank">OverTheWire</a></li>
-    </ul>
-  </section>
-
-  <footer>
-    &copy; 2025 - CyberLearn DZ
-  </footer>
-
-  <script>
-    function toggle(id) {
-      const el = document.getElementById(id);
-      el.style.display = (el.style.display === "none" || el.style.display === "") ? "block" : "none";
-    }
-  </script>
-
-</body>
-</html>
+    .btn {
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 25px;
+      border: 2px solid #00ff00;
+      background: none;
+      color: #00ff00;
+      font-size: 1em;
+      text-decoration:
